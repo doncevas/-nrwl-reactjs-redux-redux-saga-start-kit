@@ -108,6 +108,60 @@
           }
         }
       }
+    },
+    "data": {
+      "root": "libs/data",
+      "sourceRoot": "libs/data/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/data/.eslintrc",
+            "tsConfig": [
+              "libs/data/tsconfig.lib.json",
+              "libs/data/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/data/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/data/jest.config.js",
+            "tsConfig": "libs/data/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "data-lib": {
+      "root": "libs/data-lib",
+      "sourceRoot": "libs/data-lib/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/data-lib/.eslintrc",
+            "tsConfig": [
+              "libs/data-lib/tsconfig.lib.json",
+              "libs/data-lib/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/data-lib/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/data-lib/jest.config.js",
+            "tsConfig": "libs/data-lib/tsconfig.spec.json"
+          }
+        }
+      }
     }
   },
   "cli": {

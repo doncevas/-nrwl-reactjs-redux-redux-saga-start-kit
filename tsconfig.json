@@ -15,7 +15,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nrwl-saga-redux-starter/data": ["libs/data/src/index.ts"],
+      "@nrwl-saga-redux-starter/data-lib": ["libs/data-lib/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -17,6 +17,12 @@
     "front-end-e2e": {
       "tags": [],
       "implicitDependencies": ["front-end"]
+    },
+    "data": {
+      "tags": []
+    },
+    "data-lib": {
+      "tags": []
     }
   }
 }
