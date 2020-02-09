@@ -38,7 +38,6 @@ export const configureStore =  (initialState: ApplicationRootState | {} = {}, hi
       store.replaceReducer(createReducer(store.injectedReducers));
   //   });
   // }
-  // store.replaceReducer(createReducer(store.injectedReducers));
 
   return store;
 }
